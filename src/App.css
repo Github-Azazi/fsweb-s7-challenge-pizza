@@ -13,6 +13,48 @@
   }
 }
 
+h1 {
+
+  padding: 20px;
+  color: white;
+}
+
+
+.containerAlign{
+
+  padding: 10px;
+  font-size: 43px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+
+.button-homepage{
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px 45px 10px 45px;
+  background: #FDC913;
+  font-weight: bold;
+  border: none;
+}
+
+
+.homePageHalfPizza{
+
+  transform: rotate(180deg) scale(1.5);
+  margin-top: 40%;
+  
+
+}
+.button:hover{
+  background: #c29e1a ;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,6 +70,20 @@
   color: #61dafb;
 }
 
+.maindivcenter {
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #CE2829;
+
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +91,209 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.orderPageHeader{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  background-color: #CE2829;
+  padding-bottom: 20px;
+}
+
+.form-container{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*
+.container{
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+*/
+
+.form-wrapper {
+
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+  width: 47%;
+
+}
+
+.price-rating-container{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.rating-wrapper{
+
+   width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.size-dough-selection{
+
+  display: flex;
+  justify-content: flex-start;
+  gap: 47%;
+
+}
+
+.radio-size-selection{
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.extra-checkbox-selection{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 5px;
+  margin-bottom: 60px;
+
+}
+
+.order-note{
+
+width: 99%;
+height: 40px;
+border-radius: 5px;
+}
+
+.hr-style{
+
+  padding: 20px 0px;
+  
+}
+
+.result{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    
+
+}
+
+/* .quantify{
+
+} */
+
+.totalPrice{
+  
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 40%;
+  gap: 10px;
+
+  background-color: white;
+  border-width: 1px;
+  border-color: #d3d3d3;
+  border-style: solid;
+  margin: 0 auto;
+
+}
+
+.quantify {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.quantify button {
+  
+  width: 50px;
+  height: 50px;
+  background-color: #FDC913;
+  border-width: 0.1px;
+  border-radius: 5px;
+   font-size: 1em;
+}
+
+
+.quantify span {
+ 
+  width: 50px;
+  height: 50px;
+  
+  background-color: white;
+  
+  border-width: 0.1px;
+ 
+  border-color: #d3d3d3;
+  
+  color: black;
+  
+  font-size: 1rem;
+ 
+  text-align: center;
+  
+  line-height: 50px;
+}
+
+
+.totalPrice h3 {
+  /* Yazıyı yatayda ortala */
+  text-align: center;
+}
+
+.totalPrice .price-area div {
+  /* Yazıyı yatayda ortala */
+  text-align: center;
+}
+
+/* totalPrice sınıfının içindeki price-area sınıfının içindeki div elemanlarının ikincisini seç */
+.totalPrice .price-area div:nth-child(2) {
+  /* Yazı rengini kırmızı yap */
+  color: rgb(240, 0, 0);
+}
+
+/* totalPrice sınıfının içindeki button elemanını seç */
+.totalPrice button {
+  /* Kutu şeklinde görünmesi için genişlik ve yükseklik ver */
+  width: 200px;
+  height: 50px;
+  /* Arka plan rengini #FDC913 yap */
+  background-color: #FDC913;
+  /* Kenarlık kalınlığını 2px yap */
+  border-width: 2px;
+  /* Kenarlık rengini siyah yap */
+  border-color: black;
+  /* Kenarlık stilini katı yap */
+  border-style: solid;
+  /* Yazı rengini siyah yap */
+  color: black;
+  /* Yazı boyutunu büyüt */
+  font-size: 1em;
+  /* Kutuyu yatayda ortala */
+  margin: 0 auto;
+  border-radius: 5px;
 }
